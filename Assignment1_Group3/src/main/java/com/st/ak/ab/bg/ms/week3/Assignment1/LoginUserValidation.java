@@ -51,7 +51,9 @@ public class LoginUserValidation extends HttpServlet {
 	    }  
 	    else
 	    {  
-	        out.print("Sorry UserName or Password Error!");  
+	    	out.println("<script type=\"text/javascript\">");
+	        out.println("alert('User or password incorrect');");
+	        out.println("</script>");
 	        RequestDispatcher rd=request.getRequestDispatcher("/Login.jsp");  
 	        rd.include(request, response);                        
 	    }  
