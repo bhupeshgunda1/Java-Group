@@ -5,12 +5,14 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Login Page</title>
+<link rel="stylesheet" href="css/Login.css">
 </head>
 <body>
+	<div id="bg"></div>
 	<form action="LoginUserValidation" method="post">  
-		Username:<input type="text" name="username"/><br/>
-		Password:<input type="password" name="userpass"/><br/>
-		<input type="submit" value="Submit"/> 
+		<input type="text" class="Fname" name="username" placeholder="Username" /><br/>
+		<input type="password" class="Pass" name="userpass" placeholder="Password"/><br/>
+		<input type="submit" class="Btn" value="Submit" /> 
 	</form>
 </body>
 </html>
