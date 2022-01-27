@@ -13,14 +13,13 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class UserValidationLogin
  */
-@WebServlet("/UserValidationLogin")
-public class UserValidationLogin extends HttpServlet {
+@WebServlet("/LoginUserValidation")
+public class LoginUserValidation extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public UserValidationLogin() {
+    public LoginUserValidation() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -38,22 +37,22 @@ public class UserValidationLogin extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		//doGet(request, response);
+		
 		response.setContentType("text/html");  
 	    PrintWriter out = response.getWriter();  
-	    String n=request.getParameter("userName");  
-	    String p=request.getParameter("userPass");  
+	    String n=request.getParameter("username");  
+	    String p=request.getParameter("userpass");  
 	          
 	    //user validation for the password
-	    if(p.equals("servlet") && n.equals("grade"))
+	    if(p.equals("servlet"))
 	    {  
-	        RequestDispatcher rd=request.getRequestDispatcher("WelcomeServlet");  
+	    	RequestDispatcher rd=request.getRequestDispatcher("Welcome");  
 	        rd.forward(request, response);  
 	    }  
 	    else
 	    {  
 	        out.print("Sorry UserName or Password Error!");  
-	        RequestDispatcher rd=request.getRequestDispatcher("/index.html");  
+	        RequestDispatcher rd=request.getRequestDispatcher("/Login.jsp");  
 	        rd.include(request, response);                        
 	    }  
 	    }

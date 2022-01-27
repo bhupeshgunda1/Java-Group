@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="Servlet2" method="post">  
+	<form action="Compute" method="post">  
 		Student Name: <input type="text" name="StuName"/><br/>
 		Subject1:<input type="text" name="sub1"/><br/>
 		Subject2:<input type="text" name="sub2"/><br/>
