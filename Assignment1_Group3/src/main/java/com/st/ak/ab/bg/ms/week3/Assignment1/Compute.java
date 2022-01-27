@@ -34,7 +34,7 @@ public class Compute extends HttpServlet {
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 ***/
+	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
 	{
 		response.setContentType("text/html");  
@@ -47,7 +47,6 @@ public class Compute extends HttpServlet {
 	    Double total = s1+s2+s3+s4+s5;
 	    Double avg = total/5;
 	    out.print("Total is " + total);
-	    out.print("<br>");
 	    out.print("avg is " + avg);
 	}
 }
