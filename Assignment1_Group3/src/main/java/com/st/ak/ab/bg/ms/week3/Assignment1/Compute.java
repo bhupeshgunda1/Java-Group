@@ -2,6 +2,7 @@ package com.st.ak.ab.bg.ms.week3.Assignment1;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Arrays;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -44,9 +45,10 @@ public class Compute extends HttpServlet {
 	    Double s3 =Double.parseDouble(request.getParameter("sub3"));
 	    Double s4 =Double.parseDouble(request.getParameter("sub4"));
 	    Double s5 =Double.parseDouble(request.getParameter("sub5"));
+	    Double[] nums = {s1,s2,s3,s4,s5};
+	    Arrays.sort(nums);
 	    Double total = s1+s2+s3+s4+s5;
-	    Double avg = total/5;
-	    out.print("Total is " + total);
-	    out.print("avg is " + avg);
+	    Double average = total/5;
+	    response.sendRedirect("Final.jsp?average="+average+"&min="+nums[0]+"&max="+nums[nums.length-1]); 	    
 	}
 }
