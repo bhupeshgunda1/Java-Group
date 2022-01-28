@@ -5,16 +5,19 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<link rel="stylesheet" href="css/Scores.css">
 </head>
 <body>
+<div id="bg"></div>
 	<form action="Compute" method="post">  
-		Student Name: <input type="text" name="StuName"/><br/>
-		Subject1:<input type="text" name="sub1"/><br/>
-		Subject2:<input type="text" name="sub2"/><br/>
-		Subject3:<input type="text" name="sub3"/><br/>
-		Subject4:<input type="text" name="sub4"/><br/>
-		Subject5:<input type="text" name="sub5"/><br/>
-		<input type="submit" value="Submit"/> 
+		<h1> Enter The Student Details</h1>
+		<input type="text" class="sub" name="StuName" placeholder="Student name"/><br/>
+		<input type="text" class="sub" name="sub1" placeholder="Subject 1"/><br/>
+		<input type="text" class="sub" name="sub2" placeholder="Subject 2"/><br/>
+		<input type="text" class="sub" name="sub3" placeholder="Subject 3"/><br/>
+		<input type="text" class="sub" name="sub4" placeholder="Subject 4"/><br/>
+		<input type="text" class="sub" name="sub5" placeholder="Subject 5"/><br/>
+		<input type="submit" class="Btn" value="Submit"/> 
 	</form>
 </body>
 </html>
