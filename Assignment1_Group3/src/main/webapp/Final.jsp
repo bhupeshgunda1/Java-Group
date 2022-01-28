@@ -7,8 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	Average score:<input type="text" name="">
-	Maximum score:<input type="text" name="">
-	Minimum score:<input type="text" name="">
+	Average score : <%= request.getParameter("average")%>
+	Minimum score : <%= request.getParameter("min") %>
+	Maximum score : <%= request.getParameter("max") %>
 </body>
 </html>
