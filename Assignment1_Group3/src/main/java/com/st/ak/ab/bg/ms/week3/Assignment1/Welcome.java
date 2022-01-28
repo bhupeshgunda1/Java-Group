@@ -3,6 +3,7 @@ package com.st.ak.ab.bg.ms.week3.Assignment1;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -54,10 +55,12 @@ public class Welcome extends HttpServlet {
 
 			HttpSession session = request.getSession();
 			session.setAttribute("username", n);
-			out.print("<br>");
-			out.print("<a href='Scores.jsp'>  Click here to enter marks </a>");
-
-			out.close();
+			out.println("<script type=\"text/javascript\">");
+	        out.println("alert('Successful Login');");
+	        out.println("</script>");
+	        			
+			RequestDispatcher rd=request.getRequestDispatcher("/Scores.jsp");  
+	        rd.include(request, response);  
 
 		} catch (Exception e) {
 			System.out.println(e);
