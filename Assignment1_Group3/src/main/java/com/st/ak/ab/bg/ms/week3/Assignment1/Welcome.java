@@ -56,11 +56,11 @@ public class Welcome extends HttpServlet {
 			HttpSession session = request.getSession();
 			session.setAttribute("username", n);
 			out.println("<script type=\"text/javascript\">");
-	        out.println("alert('Successful Login');");
-	        out.println("</script>");
-	        			
-			RequestDispatcher rd=request.getRequestDispatcher("/Scores.jsp");  
-	        rd.include(request, response);  
+			out.println("alert('Successful Login');");
+			out.println("</script>");
+
+			RequestDispatcher rd = request.getRequestDispatcher("/Scores.jsp");
+			rd.include(request, response);
 
 		} catch (Exception e) {
 			System.out.println(e);
