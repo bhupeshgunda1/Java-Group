@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Final Page</title>
 <style>
 body {
 	background-image: url('./css/background.jpg');
@@ -24,6 +24,7 @@ body {
 	
 	Average score : <%= request.getParameter("average")%><br>
 	Minimum score : <%= request.getParameter("min") %><br>
-	Maximum score : <%= request.getParameter("max") %>
+	Maximum score : <%= request.getParameter("max") %> <br>
+	Grade: <%= request.getParameter("grade") %>
 </body>
 </html>

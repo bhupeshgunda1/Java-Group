@@ -52,6 +52,42 @@ public class Compute extends HttpServlet {
 		Arrays.sort(nums);
 		Double total = s1 + s2 + s3 + s4 + s5;
 		Double average = total / 5;
-		response.sendRedirect("Final.jsp?average=" + average + "&min=" + nums[0] + "&max=" + nums[nums.length - 1]);
+		String grade;
+		if (average >= 94 && average <= 100) {
+			grade = "A+";
+		}
+		else if(average >= 87 && average <=93) {
+			grade = "A";
+		}
+		else if(average >= 80  && average <=86) {
+			grade="A-";
+		}
+		else if(average >= 77 && average <=79) {
+			grade="B+";
+		}
+		else if(average >= 73 && average <=76) {
+			grade="B";
+		}
+		else if(average >= 70 && average <=72) {
+			grade="B-";
+		}
+		else if(average >= 67 && average <=69) {
+			grade="C+";
+		}
+		else if(average >= 63 && average <=66) {
+			grade="C";
+		}
+		else if(average >= 60 && average <=62) {
+			grade="C-";
+		}
+		else if(average >= 50 && average <=59) {
+			grade="D";
+		}
+		else {
+			grade="F";
+		}
+		response.sendRedirect("Final.jsp?average=" + average + "&min=" + nums[0] + "&max=" + nums[nums.length - 1] + "&grade=" + grade);
+		
+
 	}
 }
