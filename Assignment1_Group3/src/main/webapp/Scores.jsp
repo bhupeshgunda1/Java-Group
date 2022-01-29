@@ -4,8 +4,8 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
-<link rel="stylesheet" href="css/Scores.css">
+<title>Scores Page</title>
+<link rel="stylesheet" href="css/Final.css">
 </head>
 <body>
 <div id="bg"></div>

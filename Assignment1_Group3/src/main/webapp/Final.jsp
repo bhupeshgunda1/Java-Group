@@ -7,9 +7,9 @@
 <title>Final Page</title>
 <link rel="stylesheet" href="css/Final.css">
 </head>
-<body>
+<body id="final">
 
-<div id="bg"></div>
+
 <img src="logo.jpg">
 	Result:<br>
 	Average score : <%= request.getParameter("average")%><br>
