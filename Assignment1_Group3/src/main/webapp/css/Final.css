@@ -1,92 +1,87 @@
 /* CSS File */
 
 /* CSS for Final Page*/
-
 #final {
 	background-image: url('./background.jpg');
 	font-family: 'Lato', sans-serif;
 	display: flex;
-  	justify-content: center;
-  	align-items: center;
-  	min-height: 100vh;
-  	font-size:xx-large;
-  	color:White;
-	}
-	
-img {
-	height:15vh;
-	width:15vh;
-	margin-bottom:auto;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-size: xx-large;
+	color: White;
 }
 
-#team{
-	margin-top:auto;
-	margin-left:95vh;
-	justify-content:right;
+img {
+	height: 15vh;
+	width: 15vh;
+	margin-bottom: auto;
+}
+
+#team {
+	margin-top: auto;
+	margin-left: 95vh;
+	justify-content: right;
 }
 
 /*CSS for Login and Score Pages */
-
 body {
-  font-family: 'Lato', sans-serif;
-  color: #4A4A4A;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
+	font-family: 'Lato', sans-serif;
+	color: #4A4A4A;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
 }
 
 #bg {
-  background-image: url('./background.jpg');
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center center;
+	background-image: url('./background.jpg');
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 form {
-  width: 400px;
-  position: relative;
+	width: 400px;
+	position: relative;
 }
 
-h1{
-	color:white;
+h1 {
+	color: white;
 }
 
-
-
-.Fname , .sub, .Pass{
+.Fname, .sub, .Pass {
 	font-family: inherit;
-  width: 100%;
-  outline: none;
-  background-color: #fff;
-  border-radius: 4px;
-  border-color: #8D9192;
-  display: block;
-  padding: 0.9rem 0.7rem;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-  font-size: 17px;
-  color: #4A4A4A;
+	width: 100%;
+	outline: none;
+	background-color: #fff;
+	border-radius: 4px;
+	border-color: #8D9192;
+	display: block;
+	padding: 0.9rem 0.7rem;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+	font-size: 17px;
+	color: #4A4A4A;
 }
 
-
-.Btn{
+.Btn {
 	outline: none;
-  border: none;
-  cursor: pointer;
-  display: inline-block;
-  margin: 0 auto;
-  padding: 0.9rem 2.5rem;
-  text-align: center;
-  background-color: #2A91C6;
-  color: #fff;
-  border-radius: 4px;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-  font-size: 17px;
+	border: none;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 auto;
+	padding: 0.9rem 2.5rem;
+	text-align: center;
+	background-color: #2A91C6;
+	color: #fff;
+	border-radius: 4px;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+	font-size: 17px;
 }
