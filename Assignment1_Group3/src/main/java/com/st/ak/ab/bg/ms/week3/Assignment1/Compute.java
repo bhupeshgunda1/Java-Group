@@ -11,6 +11,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
+ * Date - @28 January 2022 
+ * Author - @Avinash Kour, @Ayesha Abdul Basith
+ * Description - Here, the value of subjects is taken from Scores.jsp and the
+ * average is computed and scores and grade is sent to final.jsp 
  * Servlet implementation class Compute
  */
 @WebServlet("/Compute")

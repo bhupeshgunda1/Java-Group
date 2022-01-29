@@ -11,6 +11,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
+ * Date - @28 January 2022 
+ * Author - @Bhupesh Gunda, @Sathish Thimma Reddy
+ * Description - Username and Password are taken from login.jsp, validated here
+ * and then sent to Welcome.java after successful login. 
  * Servlet implementation class UserValidationLogin
  */
 @WebServlet("/LoginUserValidation")
