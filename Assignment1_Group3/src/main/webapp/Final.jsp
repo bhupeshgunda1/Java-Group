@@ -4,13 +4,30 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Final Page</title>
+<link rel="stylesheet" href="css/Final.css">
 </head>
 <body>
 	Average score : <%= request.getParameter("average")%>
 	Minimum score : <%= request.getParameter("min") %>
 	Maximum score : <%= request.getParameter("max") %>
+	<div id="bg"></div>
+	<img src="logo.jpg">
+	Result:<br>
+	Average score : <%= request.getParameter("average")%><br>
+	Minimum score : <%= request.getParameter("min") %><br>
+	Maximum score : <%= request.getParameter("max") %> <br>
+	Grade: <%= request.getParameter("grade") %>
 	
+	<div id="team"> By
+		<ul>
+			<li> Avinash Kour </li>
+			<li> Ayesha Abdul Basith </li>
+			<li> Bhupesh Gunda </li>
+			<li> Manvir Singh Sodhi </li>
+			<li> Sathish Thimma Reddy </li>
+		</ul>
+	</div>
 	
 </body>
 </html>

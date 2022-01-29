@@ -12,6 +12,10 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /**
+ * Date - @28 January 2022 
+ * Author - @Manvir Singh Sodhi, @Bhupesh Gunda
+ * Description - After validation and successful login, the user is welcomed and
+ * proceeds to Scores.jsp for accepting subjects' scores. 
  * Servlet implementation class Compute
  */
 @WebServlet("/Welcome")

@@ -1,0 +1,22 @@
+body {
+	background-image: url('./background.jpg');
+	font-family: 'Lato', sans-serif;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	min-height: 100vh;
+  	font-size:xx-large;
+  	color:White;
+	}
+	
+img {
+	height:15vh;
+	width:15vh;
+	margin-bottom:auto;
+}
+
+#team{
+	margin-top:auto;
+	margin-left:95vh;
+	justify-content:right;
+}
