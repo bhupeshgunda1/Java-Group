@@ -53,5 +53,6 @@ public class Compute extends HttpServlet {
 		Double total = s1 + s2 + s3 + s4 + s5;
 		Double average = total / 5;
 		response.sendRedirect("Final.jsp?average=" + average + "&min=" + nums[0] + "&max=" + nums[nums.length - 1]);
+		
 	}
 }

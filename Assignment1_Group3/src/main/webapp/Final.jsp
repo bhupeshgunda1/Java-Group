@@ -10,5 +10,7 @@
 	Average score : <%= request.getParameter("average")%>
 	Minimum score : <%= request.getParameter("min") %>
 	Maximum score : <%= request.getParameter("max") %>
+	
+	
 </body>
 </html>
